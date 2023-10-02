@@ -10,7 +10,7 @@ document.querySelector('#jseditorToolbarRight').append(seoBTN);
 
 	seoBTN.addEventListener('click',(e)=>{
 		e.preventDefault();
-	window.open('<?php echo DOMAIN_ADMIN;?>plugin/seogpt?formwindow',640,480);
+	window.open('<?php echo DOMAIN_ADMIN;?>plugin/seogpt?formwindow',"seoGPT","menubar=0,resizable=1,width=640,height=480");
 });
 
 };

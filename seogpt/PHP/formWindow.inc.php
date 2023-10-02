@@ -33,7 +33,7 @@ echo 'value="'.$_GET['question'].'"';
 ;?>
  type="text">
 
-<input type="submit" value="Send question to AI" 
+<input type="submit" value="Send question to AI"  class="seoGPT"
 style="padding: 0.6rem 1.5rem; border-radius:1.2rem;color:#fff;background:#DF2E38;border:none;margin-top:10px;"
  name="SeoGPT">
 
@@ -48,6 +48,9 @@ echo $resHTML;?>
 
 
 <script>
+
+
+document.querySelector('.seoGPT').innerText='Please Wait';
 
 const question = document.querySelector('.question');
 question.addEventListener('keyup',()=>{
